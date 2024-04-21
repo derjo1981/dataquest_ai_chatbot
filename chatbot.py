@@ -2,7 +2,7 @@
 import streamlit as st
 
 #importing all relevant libraries for the conversation manager class
-pip install openai
+
 from openai import OpenAI
 import tiktoken
 import json
