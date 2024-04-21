@@ -9,7 +9,7 @@ import json
 from datetime import datetime
 
 api_key = st.secrets.API_KEY
-st.write(api_key)
+
 #creating ConversationManager class 
 
 class ConversationManager:
