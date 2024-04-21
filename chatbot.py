@@ -2,7 +2,8 @@
 import streamlit as st
 
 #importing all relevant libraries for the conversation manager class
-import openai
+pip install openai
+from openai import OpenAI
 import tiktoken
 import json
 from datetime import datetime
@@ -17,7 +18,7 @@ api_key = os.environ.get('API_KEY')
 
 class ConversationManager:
     def __init__(self, api_key,base_url="https://openai-api.dataquest.io/v1", model="models/openhermes-2.5-mistral-7b", default_temperature=0.7, default_max_tokens=500, token_budget=1000, history_file=None):
-        self.client = openai.OpenAI(api_key=api_key)
+        self.client = OpenAI(api_key=api_key)
         self.client.base_url = base_url
         self.model = model
         self.temperature = default_temperature
